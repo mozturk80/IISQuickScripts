@@ -1,0 +1,1 @@
+Welcome <%Response.Write(Session("username"))%>

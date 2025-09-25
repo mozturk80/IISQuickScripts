@@ -1,0 +1,18 @@
+<configuration>
+<connectionStrings>  
+  <add name="testDBConnection" providerName="System.Data.SqlClient" connectionString="Persist Security Info=False;Integrated Security=true;Initial Catalog=moztest;Data Source=(LocalDb)\MSSQLLocalDB;" />  
+<!-- <add name="testDBConnection"   providerName="System.Data.SqlClient"  connectionString="Data Source=(LocalDb)\MSSQLLocalDB;Trusted_Connection=False;User ID=.\iisuser;Password=Corxxx;Initial Catalog=moztest;"/>    -->
+</connectionStrings>  
+    <system.web>
+<authentication mode="Forms"> 
+ <forms defaultUrl="sqlclient.aspx" loginUrl="logon.aspx" name=".ASPXFORMSAUTH" timeout="6" />
+  </authentication>
+<identity impersonate="true" />
+        <authorization>
+            <deny users="?" /> 
+        </authorization>
+    </system.web>
+<system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+</system.webServer>
+</configuration>

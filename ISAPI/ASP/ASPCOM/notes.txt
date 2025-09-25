@@ -1,0 +1,4 @@
+Article: https://docs.microsoft.com/en-us/previous-versions/iis/6.0-sdk/ms524620(v=vs.90)
+REgister: 
+C:\WINDOWS\system32>"C:\Windows\System32\REGSVR32.EXE" /i:"C:\inetpub\wwwroot\ASPCOM\fahtoCelcius.sct" "C:\Windows\System32\scrobj.dll"
+

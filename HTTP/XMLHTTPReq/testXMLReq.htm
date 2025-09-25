@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <title></title>
+    <script type="text/javascript" src="XMLHttpReqModule.js"></script>
+    <script type="text/javascript">
+
+        function helloToServer() {
+            var params = "name=" + encodeURIComponent(document.form.name.value);
+            sendRequest("myscript.aspx", params, helloFromServer, "POST");
+        }
+
+        function helloFromServer() {
+            if (httpRequest.readyState == 4) {
+                if (httpRequest.status == 200) {
+                    alert("Response: " + httpRequest.responseText);
+                }
+            }
+        }
+
+    </script>
+    </head>
+    <body>
+        <form name ="form" runat="server">
+            <input type="text" name="name" />
+            <input type="button" value="enter" onclick="helloToServer()" />
+        </form>
+    </body>
+</html>
