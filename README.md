@@ -2,7 +2,7 @@
 
 Welcome to the **IISQuickScripts** Repo.
 
-You can clone this repo preferably under your `wwwroot` folder in IIS, and convert any folder you like like this:
+You can clone this repo preferably under your `wwwroot` folder in IIS, and convert any folder to an application like this:
 
 <img width="417" height="211" alt="image" src="https://github.com/user-attachments/assets/4d719999-b895-4fb7-a628-5b05967387eb" />
 
